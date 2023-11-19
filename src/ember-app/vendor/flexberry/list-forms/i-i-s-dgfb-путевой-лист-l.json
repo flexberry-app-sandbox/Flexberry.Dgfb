@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-dgfb-путевой-лист-e",
+  "editForm": "i-i-s-dgfb-путевой-лист-e",
+  "external": false,
+  "caption": "Путевой лист",
+  "name": "IISDgfbПутевойЛистL",
+  "className": "ПутевойЛистL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dgfb-путевой-лист",
+      "modelProjection": "ПутевойЛистL"
+    }
+  ]
+}

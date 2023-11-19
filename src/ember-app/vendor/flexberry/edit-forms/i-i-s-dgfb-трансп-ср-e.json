@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Трансп ср",
+  "name": "IISDgfbТранспСрE",
+  "className": "ТранспСрE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dgfb-трансп-ср",
+      "modelProjection": "ТранспСрE"
+    }
+  ]
+}

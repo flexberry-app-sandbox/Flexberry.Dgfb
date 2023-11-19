@@ -1,0 +1,267 @@
+﻿{
+  "name": "IISDgfbДоговор",
+  "modelName": "i-i-s-dgfb-договор",
+  "className": "Договор",
+  "nameSpace": "IIS.Dgfb",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаЗаключ",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "датаНачала",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "датаОконч",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "обязанПосред",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "контрагент",
+      "relatedTo": "i-i-s-dgfb-контрагент",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "организация",
+      "relatedTo": "i-i-s-dgfb-организация",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "рукОтдЛог",
+      "relatedTo": "i-i-s-dgfb-рук-отд-лог",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ДоговорE",
+      "modelName": "i-i-s-dgfb-договор",
+      "attrs": [
+        {
+          "name": "датаЗаключ",
+          "caption": "Дата заключ",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "датаНачала",
+          "caption": "Дата начала",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "датаОконч",
+          "caption": "Дата оконч",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "обязанПосред",
+          "caption": "Обязан посред",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Организация",
+          "name": "организация",
+          "relatedTo": "i-i-s-dgfb-организация",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Примечания",
+          "lookupValueField": "примечания",
+          "relationName": "РукОтдЛог",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "примечания",
+              "caption": "Примечания",
+              "hidden": true,
+              "index": 7
+            }
+          ],
+          "index": 6,
+          "type": "standard",
+          "caption": "Рук отд лог",
+          "name": "рукОтдЛог",
+          "relatedTo": "i-i-s-dgfb-рук-отд-лог",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Организация",
+          "lookupValueField": "организация",
+          "relationName": "Контрагент",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "организация",
+              "caption": "Организация",
+              "hidden": true,
+              "index": 9
+            }
+          ],
+          "index": 8,
+          "type": "standard",
+          "caption": "Контрагент",
+          "name": "контрагент",
+          "relatedTo": "i-i-s-dgfb-контрагент",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ДоговорL",
+      "modelName": "i-i-s-dgfb-договор",
+      "attrs": [
+        {
+          "name": "датаЗаключ",
+          "caption": "Дата заключ",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "датаНачала",
+          "caption": "Дата начала",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "датаОконч",
+          "caption": "Дата оконч",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "обязанПосред",
+          "caption": "Обязан посред",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование",
+          "name": "организация",
+          "relatedTo": "i-i-s-dgfb-организация",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "РукОтдЛог",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "примечания",
+              "caption": "Примечания",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Примечания",
+          "name": "рукОтдЛог",
+          "relatedTo": "i-i-s-dgfb-рук-отд-лог",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Контрагент",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "организация",
+              "caption": "Организация",
+              "hidden": false,
+              "index": 6
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Организация",
+          "name": "контрагент",
+          "relatedTo": "i-i-s-dgfb-контрагент",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

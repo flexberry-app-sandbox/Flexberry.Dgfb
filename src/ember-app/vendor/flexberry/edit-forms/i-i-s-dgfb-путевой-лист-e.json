@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Персонал",
+      "projection": "ПерсоналL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ТранспСр",
+      "projection": "ТранспСрL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Путевой лист",
+  "name": "IISDgfbПутевойЛистE",
+  "className": "ПутевойЛистE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dgfb-путевой-лист",
+      "modelProjection": "ПутевойЛистE"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-dgfb-контрагент-e",
+  "editForm": "i-i-s-dgfb-контрагент-e",
+  "external": false,
+  "caption": "Контрагент",
+  "name": "IISDgfbКонтрагентL",
+  "className": "КонтрагентL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dgfb-контрагент",
+      "modelProjection": "КонтрагентL"
+    }
+  ]
+}

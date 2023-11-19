@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Организация",
+      "projection": "ОрганизацияL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "РукОтдЛог",
+      "projection": "РукОтдЛогL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Контрагент",
+      "projection": "КонтрагентL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Договор",
+  "name": "IISDgfbДоговорE",
+  "className": "ДоговорE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dgfb-договор",
+      "modelProjection": "ДоговорE"
+    }
+  ]
+}

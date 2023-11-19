@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Персонал",
+      "projection": "ПерсоналL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Рук отд лог",
+  "name": "IISDgfbРукОтдЛогE",
+  "className": "РукОтдЛогE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dgfb-рук-отд-лог",
+      "modelProjection": "РукОтдЛогE"
+    }
+  ]
+}

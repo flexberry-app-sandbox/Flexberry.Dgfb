@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-dgfb-организация-e",
+  "editForm": "i-i-s-dgfb-организация-e",
+  "external": false,
+  "caption": "Организация",
+  "name": "IISDgfbОрганизацияL",
+  "className": "ОрганизацияL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dgfb-организация",
+      "modelProjection": "ОрганизацияL"
+    }
+  ]
+}

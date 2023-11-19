@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISDgfbКонтрагент",
+  "modelName": "i-i-s-dgfb-контрагент",
+  "className": "Контрагент",
+  "nameSpace": "IIS.Dgfb",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "организация",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "ответстлицо",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КонтрагентE",
+      "modelName": "i-i-s-dgfb-контрагент",
+      "attrs": [
+        {
+          "name": "организация",
+          "caption": "Организация",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "ответстлицо",
+          "caption": "Ответстлицо",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "КонтрагентL",
+      "modelName": "i-i-s-dgfb-контрагент",
+      "attrs": [
+        {
+          "name": "организация",
+          "caption": "Организация",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "ответстлицо",
+          "caption": "Ответстлицо",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

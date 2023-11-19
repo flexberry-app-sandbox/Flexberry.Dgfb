@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Контрагент",
+  "name": "IISDgfbКонтрагентE",
+  "className": "КонтрагентE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dgfb-контрагент",
+      "modelProjection": "КонтрагентE"
+    }
+  ]
+}

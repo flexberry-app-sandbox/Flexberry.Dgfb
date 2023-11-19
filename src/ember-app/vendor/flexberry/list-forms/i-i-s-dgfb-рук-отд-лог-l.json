@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-dgfb-рук-отд-лог-e",
+  "editForm": "i-i-s-dgfb-рук-отд-лог-e",
+  "external": false,
+  "caption": "Рук отд лог",
+  "name": "IISDgfbРукОтдЛогL",
+  "className": "РукОтдЛогL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dgfb-рук-отд-лог",
+      "modelProjection": "РукОтдЛогL"
+    }
+  ]
+}

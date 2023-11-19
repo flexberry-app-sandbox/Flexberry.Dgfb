@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-dgfb-должности-e",
+  "editForm": "i-i-s-dgfb-должности-e",
+  "external": false,
+  "caption": "Должности",
+  "name": "IISDgfbДолжностиL",
+  "className": "ДолжностиL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dgfb-должности",
+      "modelProjection": "ДолжностиL"
+    }
+  ]
+}

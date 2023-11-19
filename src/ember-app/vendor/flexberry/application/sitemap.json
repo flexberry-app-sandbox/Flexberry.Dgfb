@@ -1,0 +1,78 @@
+﻿{
+  "applicationCaption": "Dgfb",
+  "applicationTitle": "Dgfb",
+  "items": [
+    {
+      "link": null,
+      "menuName": "dgfb",
+      "caption": "Dgfb",
+      "title": "Dgfb",
+      "children": [
+        {
+          "link": "i-i-s-dgfb-персонал-l",
+          "menuName": null,
+          "caption": "Персонал",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-dgfb-трансп-ср-l",
+          "menuName": null,
+          "caption": "Трансп ср",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-dgfb-путевой-лист-l",
+          "menuName": null,
+          "caption": "Путевой лист",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-dgfb-организация-l",
+          "menuName": null,
+          "caption": "Организация",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-dgfb-договор-l",
+          "menuName": null,
+          "caption": "Договор",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-dgfb-контрагент-l",
+          "menuName": null,
+          "caption": "Контрагент",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-dgfb-должности-l",
+          "menuName": null,
+          "caption": "Должности",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-dgfb-журнал-учета-l",
+          "menuName": null,
+          "caption": "Журнал учета",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-dgfb-рук-отд-лог-l",
+          "menuName": null,
+          "caption": "Рук отд лог",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

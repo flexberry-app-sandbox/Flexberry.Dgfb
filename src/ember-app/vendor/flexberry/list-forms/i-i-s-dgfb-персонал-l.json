@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-dgfb-персонал-e",
+  "editForm": "i-i-s-dgfb-персонал-e",
+  "external": false,
+  "caption": "Персонал",
+  "name": "IISDgfbПерсоналL",
+  "className": "ПерсоналL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dgfb-персонал",
+      "modelProjection": "ПерсоналL"
+    }
+  ]
+}

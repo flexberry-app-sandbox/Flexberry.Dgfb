@@ -1,0 +1,96 @@
+﻿{
+  "name": "IISDgfbТранспСр",
+  "modelName": "i-i-s-dgfb-трансп-ср",
+  "className": "ТранспСр",
+  "nameSpace": "IIS.Dgfb",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "госЗнак",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "марка",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "модель",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТранспСрE",
+      "modelName": "i-i-s-dgfb-трансп-ср",
+      "attrs": [
+        {
+          "name": "марка",
+          "caption": "Марка",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "модель",
+          "caption": "Модель",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "госЗнак",
+          "caption": "Гос знак",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ТранспСрL",
+      "modelName": "i-i-s-dgfb-трансп-ср",
+      "attrs": [
+        {
+          "name": "марка",
+          "caption": "Марка",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "модель",
+          "caption": "Модель",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "госЗнак",
+          "caption": "Гос знак",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

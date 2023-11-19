@@ -1,0 +1,118 @@
+<h3 class="ui header">{{t "forms.i-i-s-dgfb-журнал-учета-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-dgfb-журнал-учета-e.дата-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.дата
+      class=(if (v-get validationModel "дата" "isInvalid") "error")
+      data-test-i-i-s-dgfb-журнал-учета-e-дата=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "дата" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.фИО
+      class=(if (v-get validationModel "фИО" "isInvalid") "error")
+      label=(t "forms.i-i-s-dgfb-журнал-учета-e.фИО-caption")
+      data-test-i-i-s-dgfb-журнал-учета-e-фИО=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "фИО" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-dgfb-журнал-учета-e.времяВыезда-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.времяВыезда
+      class=(if (v-get validationModel "времяВыезда" "isInvalid") "error")
+      data-test-i-i-s-dgfb-журнал-учета-e-времяВыезда=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "времяВыезда" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-dgfb-журнал-учета-e.времяВозвращ-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.времяВозвращ
+      class=(if (v-get validationModel "времяВозвращ" "isInvalid") "error")
+      data-test-i-i-s-dgfb-журнал-учета-e-времяВозвращ=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "времяВозвращ" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.показСпидом
+      class=(if (v-get validationModel "показСпидом" "isInvalid") "error")
+      label=(t "forms.i-i-s-dgfb-журнал-учета-e.показСпидом-caption")
+      data-test-i-i-s-dgfb-журнал-учета-e-показСпидом=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "показСпидом" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.пробег
+      class=(if (v-get validationModel "пробег" "isInvalid") "error")
+      label=(t "forms.i-i-s-dgfb-журнал-учета-e.пробег-caption")
+      data-test-i-i-s-dgfb-журнал-учета-e-пробег=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "пробег" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.примечания
+      class=(if (v-get validationModel "примечания" "isInvalid") "error")
+      label=(t "forms.i-i-s-dgfb-журнал-учета-e.примечания-caption")
+      data-test-i-i-s-dgfb-журнал-учета-e-примечания=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "примечания" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-dgfb-журнал-учета-e.транспСр-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.транспСр
+      displayAttributeName="марка"
+      autocomplete=true
+      relationName="транспСр"
+      projection="ТранспСрL"
+      title=(t "forms.i-i-s-dgfb-журнал-учета-e.транспСр-caption")
+      readonly=readonly
+      componentName="транспСрLookup"
+      class=(if (v-get validationModel "транспСр" "isInvalid") "error")
+      data-test-i-i-s-dgfb-журнал-учета-e-транспСр=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "транспСр" "message")}}
+  </div>
+</form>

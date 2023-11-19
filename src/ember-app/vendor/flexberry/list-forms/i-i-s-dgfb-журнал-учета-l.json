@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-dgfb-журнал-учета-e",
+  "editForm": "i-i-s-dgfb-журнал-учета-e",
+  "external": false,
+  "caption": "Журнал учета",
+  "name": "IISDgfbЖурналУчетаL",
+  "className": "ЖурналУчетаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dgfb-журнал-учета",
+      "modelProjection": "ЖурналУчетаL"
+    }
+  ]
+}

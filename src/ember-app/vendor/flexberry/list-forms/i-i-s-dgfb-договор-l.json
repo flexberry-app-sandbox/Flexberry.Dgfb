@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-dgfb-договор-e",
+  "editForm": "i-i-s-dgfb-договор-e",
+  "external": false,
+  "caption": "Договор",
+  "name": "IISDgfbДоговорL",
+  "className": "ДоговорL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dgfb-договор",
+      "modelProjection": "ДоговорL"
+    }
+  ]
+}

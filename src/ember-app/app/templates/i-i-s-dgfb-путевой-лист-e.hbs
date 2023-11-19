@@ -1,0 +1,154 @@
+<h3 class="ui header">{{t "forms.i-i-s-dgfb-путевой-лист-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.номер
+      class=(if (v-get validationModel "номер" "isInvalid") "error")
+      label=(t "forms.i-i-s-dgfb-путевой-лист-e.номер-caption")
+      data-test-i-i-s-dgfb-путевой-лист-e-номер=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "номер" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.выдатьТоплива
+      class=(if (v-get validationModel "выдатьТоплива" "isInvalid") "error")
+      label=(t "forms.i-i-s-dgfb-путевой-лист-e.выдатьТоплива-caption")
+      data-test-i-i-s-dgfb-путевой-лист-e-выдатьТоплива=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "выдатьТоплива" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-dgfb-путевой-лист-e.датаВремя-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.датаВремя
+      class=(if (v-get validationModel "датаВремя" "isInvalid") "error")
+      data-test-i-i-s-dgfb-путевой-лист-e-датаВремя=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "датаВремя" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.пунктНазнач
+      class=(if (v-get validationModel "пунктНазнач" "isInvalid") "error")
+      label=(t "forms.i-i-s-dgfb-путевой-лист-e.пунктНазнач-caption")
+      data-test-i-i-s-dgfb-путевой-лист-e-пунктНазнач=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "пунктНазнач" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.пунктОтправ
+      class=(if (v-get validationModel "пунктОтправ" "isInvalid") "error")
+      label=(t "forms.i-i-s-dgfb-путевой-лист-e.пунктОтправ-caption")
+      data-test-i-i-s-dgfb-путевой-лист-e-пунктОтправ=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "пунктОтправ" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.расстояние
+      class=(if (v-get validationModel "расстояние" "isInvalid") "error")
+      label=(t "forms.i-i-s-dgfb-путевой-лист-e.расстояние-caption")
+      data-test-i-i-s-dgfb-путевой-лист-e-расстояние=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "расстояние" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.маркаГСМ
+      class=(if (v-get validationModel "маркаГСМ" "isInvalid") "error")
+      label=(t "forms.i-i-s-dgfb-путевой-лист-e.маркаГСМ-caption")
+      data-test-i-i-s-dgfb-путевой-лист-e-маркаГСМ=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "маркаГСМ" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.остатокГСМ
+      class=(if (v-get validationModel "остатокГСМ" "isInvalid") "error")
+      label=(t "forms.i-i-s-dgfb-путевой-лист-e.остатокГСМ-caption")
+      data-test-i-i-s-dgfb-путевой-лист-e-остатокГСМ=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "остатокГСМ" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-dgfb-путевой-лист-e.допущен-caption"}}</label>
+    {{flexberry-checkbox
+      readonly=readonly
+      value=model.допущен
+      class=(if (v-get validationModel "допущен" "isInvalid") "error")
+      data-test-i-i-s-dgfb-путевой-лист-e-допущен=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "допущен" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-dgfb-путевой-лист-e.персонал-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.персонал
+      displayAttributeName="фИО"
+      autocomplete=true
+      relationName="персонал"
+      projection="ПерсоналL"
+      title=(t "forms.i-i-s-dgfb-путевой-лист-e.персонал-caption")
+      readonly=readonly
+      componentName="персоналLookup"
+      class=(if (v-get validationModel "персонал" "isInvalid") "error")
+      data-test-i-i-s-dgfb-путевой-лист-e-персонал=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "персонал" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-dgfb-путевой-лист-e.транспСр-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.транспСр
+      displayAttributeName="марка"
+      autocomplete=true
+      relationName="транспСр"
+      projection="ТранспСрL"
+      title=(t "forms.i-i-s-dgfb-путевой-лист-e.транспСр-caption")
+      readonly=readonly
+      componentName="транспСрLookup"
+      class=(if (v-get validationModel "транспСр" "isInvalid") "error")
+      data-test-i-i-s-dgfb-путевой-лист-e-транспСр=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "транспСр" "message")}}
+  </div>
+</form>
